@@ -22,291 +22,240 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="./homestyle.css" />
   </head>
-  <body
-    class="bg-black text-light"
-    style="font-family: 'Cascadia Mono', monospace"
-  >
-    <h1 class="mt-3 text-center">Meeee</h1>
+  
+  <body>
+    <h1 class="mt-4 text-center">Mohammed Armaan</h1>
+    <p class="text-center tagline">grad student @ northeastern • building things for the web</p>
 
     <section class="mt-5">
       <div class="container">
-        <div class="row g-2">
+        <div class="row g-3">
+          
+          <!-- Left Column -->
           <div class="col-8">
-            <div style="position: relative">
-              <img
-                src="./images/luffyone.png"
-                alt="luffy"
-                style="
-                  width: 100px;
-                  height: 100px;
-                  position: absolute;
-                  top: -75px;
-                  left: 0;
-                "
-              />
-
-              <div class="border border-secondary h-auto rounded-2 p-2">
-                <h3 class="">About me</h3>
-                <p class="">I am a graduate student at Northeastern</p>
-              </div>
+            
+            <!-- About -->
+            <div class="card-section position-relative">
+              <img src="./images/luffyone.png" alt="luffy" class="luffy-img" />
+              <h3>About me</h3>
+              <p class="about-text">
+                I'm a graduate student at Northeastern University. I like building web apps and turning data into insights.
+              </p>
             </div>
 
-            <div class="border border-secondary h-auto rounded-2 p-3 mt-2">
+            <!-- Work Experience -->
+            <div class="card-section">
               <h3>Work experience</h3>
 
               <!-- Experience 1 -->
               <div class="exp">
-                <div
-                  class="row exp-trigger"
-                  data-target="exp1"
-                  style="cursor: pointer"
-                >
+                <div class="row exp-trigger" data-target="exp1">
                   <div class="col">
-                    <h4>antimattr</h4>
-                    <p class="mb-2">Front-end development Intern</p>
+                    <h5 class="exp-title">antimattr</h5>
+                    <small class="exp-role">Front-end Development Intern</small>
                   </div>
                   <div class="col-auto text-end">
-                    <small>Jun 2025 – Jul 2025</small><br />
-                    <small>Bangalore, India</small>
+                    <small class="exp-date">Jun – Jul 2025</small><br />
+                    <small class="exp-location">Bangalore</small>
                   </div>
                 </div>
-
-                <ul
-                  id="exp1"
-                  class="exp-content"
-                  style="
-                    display: none;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    position: absolute;
-                    z-index: 50;
-                    background-color: coral;
-                    color: white;
-                    border: aquamarine solid 1px;
-                    width: 600px;
-                  "
-                >
-                  <li>
-                    Developed responsive frontend features for DIA (Digital
-                    Intelligent Assistant) using Next.js and TypeScript,
-                    including an AI-powered chat interface, email management
-                    module, and scheduling widgets
-                  </li>
-                  <li>
-                    Implemented 15+ reusable UI components with ShadCN UI and
-                    Tailwind CSS, ensuring accessibility standards and
-                    responsive design across devices
-                  </li>
+                <ul id="exp1" class="exp-content">
+                  <li>Developed responsive frontend features for DIA using Next.js and TypeScript</li>
+                  <li>Implemented 15+ reusable UI components with ShadCN UI and Tailwind CSS</li>
                 </ul>
               </div>
 
               <!-- Experience 2 -->
               <div class="exp">
-                <div
-                  class="row exp-trigger"
-                  data-target="exp2"
-                  style="cursor: pointer"
-                >
+                <div class="row exp-trigger" data-target="exp2">
                   <div class="col">
-                    <h4 class="mb-0">Freelance (Upwork)</h4>
-                    <h6>Front-end development</h6>
+                    <h5 class="exp-title">Freelance (Upwork)</h5>
+                    <small class="exp-role">Front-end Development</small>
                   </div>
-                  <div class="col text-end">
-                    <small>May 2025 – Jun 2025</small><br />
-                    <small>Remote</small>
+                  <div class="col-auto text-end">
+                    <small class="exp-date">May – Jun 2025</small><br />
+                    <small class="exp-location">Remote</small>
                   </div>
                 </div>
-                <ul
-                  id="exp2"
-                  class="exp-content"
-                  style="
-                    display: none;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    position: absolute;
-                    z-index: 50;
-                    background-color: black;
-                    color: white;
-                    border: aquamarine solid 1px;
-                    width: 600px;
-                  "
-                >
-                  <li>
-                    Delivered 6 production-ready website frontends using React
-                    and Remix within a 4-week timeline, maintaining 100% on-time
-                    delivery rate
-                  </li>
+                <ul id="exp2" class="exp-content">
+                  <li>Delivered 6 production-ready website frontends using React and Remix</li>
+                  <li>100% on-time delivery rate within 4-week timeline</li>
                 </ul>
               </div>
 
               <!-- Experience 3 -->
               <div class="exp">
-                <div
-                  class="row exp-trigger"
-                  data-target="exp3"
-                  style="cursor: pointer"
-                >
+                <div class="row exp-trigger" data-target="exp3">
                   <div class="col">
-                    <h4>Grid R&D</h4>
-                    <h6>Full-stack developer intern</h6>
-                    <small>Tasklearn.ai</small>
+                    <h5 class="exp-title">Grid R&D</h5>
+                    <small class="exp-role">Full-stack Developer Intern • Tasklearn.ai</small>
                   </div>
-                  <div class="col text-end">
-                    <small>Feb 2025 – May 2025</small><br />
-                    <small>Bangalore, India</small>
+                  <div class="col-auto text-end">
+                    <small class="exp-date">Feb – May 2025</small><br />
+                    <small class="exp-location">Bangalore</small>
                   </div>
                 </div>
-                <ul
-                  id="exp3"
-                  class="exp-content"
-                  style="
-                    display: none;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    position: absolute;
-                    z-index: 50;
-                    background-color: black;
-                    color: white;
-                    border: aquamarine solid 1px;
-                    width: 600px;
-                  "
-                >
-                  <li>
-                    Built 15+ React.js components with Redux state management,
-                    reducing page load time by 25%
-                  </li>
-                  <li>
-                    Designed and implemented RESTful APIs using
-                    Node.js/Express.js serving 1000+ daily requests
-                  </li>
-                  <li>
-                    Optimized MySQL database queries with Prisma ORM, improving
-                    query performance by 40%
-                  </li>
+                <ul id="exp3" class="exp-content">
+                  <li>Built 15+ React.js components with Redux, reducing page load time by 25%</li>
+                  <li>Designed RESTful APIs using Node.js/Express.js serving 1000+ daily requests</li>
+                  <li>Optimized MySQL queries with Prisma ORM, improving performance by 40%</li>
                 </ul>
               </div>
 
               <!-- Experience 4 -->
               <div class="exp">
-                <div
-                  class="row exp-trigger"
-                  data-target="exp4"
-                  style="cursor: pointer"
-                >
+                <div class="row exp-trigger" data-target="exp4">
                   <div class="col">
-                    <h4>Visume.ai</h4>
+                    <h5 class="exp-title">Visume.ai</h5>
+                    <small class="exp-role">Full-stack Developer Intern</small>
                   </div>
-                  <div class="col text-end">
-                    <small>Aug 2024 – Oct 2024</small>
+                  <div class="col-auto text-end">
+                    <small class="exp-date">Aug – Oct 2024</small>
                   </div>
                 </div>
-                <ul
-                  id="exp4"
-                  class="exp-content"
-                  style="
-                    display: none;
-                    opacity: 0;
-                    transition: opacity 0.3s ease;
-                    position: absolute;
-                    z-index: 50;
-                    background-color: black;
-                    color: white;
-                    border: aquamarine solid 1px;
-                    width: 600px;
-                  "
-                >
-                  <li>Built a responsive UI in React.js + Tailwind CSS</li>
-                  <li>
-                    Refactored REST endpoints, reducing average API response
-                    time by ~60% through query optimization
-                  </li>
+                <ul id="exp4" class="exp-content">
+                  <li>Built responsive UI in React.js + Tailwind CSS</li>
+                  <li>Reduced API response time by ~60% through query optimization</li>
                 </ul>
               </div>
             </div>
 
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              tempore sapiente nostrum sint minima, ducimus adipisci praesentium
-              error possimus totam officia sequi mollitia quidem. Vitae nam
-              dolores delectus omnis perferendis!
-            </div>
-          </div>
+            <!-- Projects -->
+            <div class="card-section">
+              <h3>Projects</h3>
+              <div class="row g-3 mt-1">
+                
+                <div class="col-6">
+                  <div class="project-card">
+                    <h5 class="project-title">Smartprep</h5>
+                    <p class="project-desc">
+                      AI learning platform with RAG architecture for document Q&A.
+                    </p>
+                    <div>
+                      <span class="project-tag">React</span>
+                      <span class="project-tag">MongoDB</span>
+                      <span class="project-tag">Gemini</span>
+                    </div>
+                  </div>
+                </div>
 
-          <div class="col-4">
-            <div class="border border-secondary h-auto rounded-2 p-2">
-              <h3>Contact Me</h3>
-              <ul>
-                <li>
-                  <a
-                    class="link-opacity-50-hover text-light"
-                    href="armaan0243@gmail.com"
-                    >Email</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-opacity-50-hover text-light"
-                    href="https://github.com/mohammedarmaan"
-                    >GitHub</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-opacity-50-hover text-light"
-                    href="armaan0243@gmail.com"
-                    >Linkedin</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-opacity-50-hover text-light"
-                    href="armaan0243@gmail.com"
-                    >Resume</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link-opacity-50-hover text-light"
-                    href="armaan0243@gmail.com"
-                    >Handshake</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="border border-secondary h-auto rounded-2 p-2 mt-2">
-              <h3>Tech Stack</h3>
-              <div>
-                <span class="techbox">JavaScript</span>
-                <span class="techbox">Python</span>
-                <span class="techbox">JavaScript</span>
-                <span class="techbox">Java</span>
-                <span class="techbox">Git</span>
-                <span class="techbox">ReactJS</span>
-                <span class="techbox">NodeJS</span>
-                <span class="techbox">ExpressJS</span>
-                <span class="techbox">MongDB</span>
-                <span class="techbox">SQL</span>
-                <span class="techbox">HTML</span>
-                <span class="techbox">Tailwind CSS</span>
-                <span class="techbox">Framer Motion</span>
-                <span class="techbox">Postman</span>
+                <div class="col-6">
+                  <div class="project-card">
+                    <h5 class="project-title">PL Analytics</h5>
+                    <p class="project-desc">
+                      Premier League team performance dashboard with ESPN data.
+                    </p>
+                    <div>
+                      <span class="project-tag">Python</span>
+                      <span class="project-tag">Streamlit</span>
+                      <span class="project-tag">Pandas</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="project-card">
+                    <h5 class="project-title">YouTube Analytics</h5>
+                    <p class="project-desc">
+                      Personal watch history dashboard with viewing patterns.
+                    </p>
+                    <div>
+                      <span class="project-tag">Python</span>
+                      <span class="project-tag">Plotly</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="project-card">
+                    <h5 class="project-title">E-Commerce Pipeline</h5>
+                    <p class="project-desc">
+                      AWS-based ETL pipeline with Databricks and PySpark.
+                    </p>
+                    <div>
+                      <span class="project-tag">AWS</span>
+                      <span class="project-tag">PySpark</span>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="border border-secondary h-auto rounded-2 p-2 mt-2">
-              <h3>Education</h3>
-              <div>MSCS @ Northeaster University</div>
+
+            <!-- Interests -->
+            <div class="card-section">
+              <h3>When I'm not coding</h3>
+              <div class="mt-2">
+                <span class="hobby-pill">⚽ Football</span>
+                <span class="hobby-pill">📺 Anime</span>
+                <span class="hobby-pill">🎮 Gaming</span>
+                <span class="hobby-pill">📚 Reading</span>
+                <span class="hobby-pill">☕ Chai</span>
+                <span class="hobby-pill">🎵 Music</span>
+              </div>
             </div>
+
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-4">
+            
+            <!-- Contact -->
+            <div class="card-section position-relative">
+              <h3>Contact</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="mailto:armaan0243@gmail.com">Email</a></li>
+                <li class="mb-2"><a href="https://github.com/mohammedarmaan" target="_blank">GitHub</a></li>
+                <li class="mb-2"><a href="https://linkedin.com/in/mohammedarmaan" target="_blank">LinkedIn</a></li>
+                <li><a href="#">Resume</a></li>
+              </ul>
+              <img id="techImage" src="" alt="" class="tech-image" />
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="card-section">
+              <h3>Tech Stack</h3>
+              <div class="mt-2">
+                <span class="techbox" data-image="./images/javascript.png">JavaScript</span>
+                <span class="techbox" data-image="./images/python.png">Python</span>
+                <span class="techbox" data-image="./images/typescript.png">TypeScript</span>
+                <span class="techbox" data-image="./images/java.png">Java</span>
+                <span class="techbox" data-image="./images/sql.png">SQL</span>
+                <span class="techbox" data-image="./images/react.png">React</span>
+                <span class="techbox" data-image="./images/nodejs.png">Node.js</span>
+                <span class="techbox" data-image="./images/express.png">Express</span>
+                <span class="techbox" data-image="./images/mongodb.png">MongoDB</span>
+                <span class="techbox" data-image="./images/tailwind.png">Tailwind</span>
+                <span class="techbox" data-image="./images/git.png">Git</span>
+                <span class="techbox" data-image="./images/aws.png">AWS</span>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="card-section">
+              <h3>Education</h3>
+              <div class="edu-content">
+                <strong>M.S. Computer Science</strong><br />
+                <span class="edu-school">Northeastern University</span><br />
+                <small class="edu-year">2024 - 2026</small>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- my js file -->
+    <footer>
+      © 2025 Mohammed Armaan
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>
