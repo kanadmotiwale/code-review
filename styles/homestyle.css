@@ -5,6 +5,8 @@ body {
   padding-left: 150px;
   padding-right: 150px;
   color: #e0e0e0;
+   font-size: 14px;  /* Reduce from default 16px */
+  line-height: 1.4;
 }
 
 /* Typography */
@@ -20,8 +22,8 @@ h1, h3 {
 .card-section {
   border: 1px solid #333;
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* About section */
@@ -164,6 +166,9 @@ a {
 }
 
 a:hover {
+  color: aquamarine;
+}
+li:hover {
   color: aquamarine;
 }
 
