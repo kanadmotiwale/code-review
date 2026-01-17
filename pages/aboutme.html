@@ -31,27 +31,30 @@
         background-color: black;
         color: white;
         font-family: "Cascadia Mono", monospace;
-        height: 100vh;
-        width: 100vw;
+        min-height: 100vh; /* Changed from height */
         display: flex;
         align-items: center;
         justify-content: center;
       }
+
       .box {
         border: aquamarine solid 1px;
         padding: 5px;
+        height: 600px; /* Changed from max-height to height */
+        width: 600px; /* Changed from max-width to width */
+        overflow-y: auto; /* Already correct */
       }
       .back {
         color: white;
       }
-      .back:hover{
+      .back:hover {
         color: aquamarine;
       }
     </style>
   </head>
   <body>
     <div class="position-relative">
-      <a href="/" class="back" >Back</a>
+      <a href="/" class="back">Back</a>
       <div class="box">
         <h2 class="text-center">About me</h2>
         <ul>
