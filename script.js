@@ -27,3 +27,19 @@ techBoxes.forEach(box => {
     techImage.style.display = 'none';
   });
 });
+
+const ticker = document.querySelector('.news-ticker');
+let scrollPos = 0;
+
+function autoScroll() {
+  scrollPos -= 2;
+  ticker.style.transform = `translateX(${scrollPos}px)`;
+  
+  if (scrollPos < -ticker.scrollWidth) {
+    scrollPos = window.innerWidth;
+  }
+  
+  requestAnimationFrame(autoScroll);
+}
+
+autoScroll();

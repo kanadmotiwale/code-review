@@ -9,8 +9,13 @@ body {
   line-height: 1.4;
 }
 
+
+p {
+  line-height: 1.1;
+}
+
 /* Typography */
-h1, h3 {
+h1, h4 {
   color: aquamarine;
 }
 
@@ -41,9 +46,12 @@ h1, h3 {
 
 /* Experience section */
 .exp {
-  padding: 12px 0;
-  border-bottom: 1px solid #333;
+  padding: 5px 0;
+  /* border-bottom: 1px solid #333; */
   transition: padding-left 0.2s ease;
+}
+.exp h6{
+  color: aquamarine;
 }
 
 .exp:hover {
@@ -88,6 +96,35 @@ h1, h3 {
   border-radius: 6px;
   width: 500px;
   padding: 15px;
+}
+
+/* ticker part */
+
+.news-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-ticker {
+  display: flex;
+  gap: 50px;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+}
+
+.news-item {
+  color: white;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Tech boxes */
