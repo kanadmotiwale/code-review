@@ -1,12 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Photo Album</title>
-    <link rel="stylesheet" href="./homestyle.css">
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: "Cascadia Mono", monospace;
+        max-height: 100vh; /* Changed from height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box {
+        border: aquamarine solid 1px;
+        padding: 5px;
+        height: 600px; /* Changed from max-height to height */
+        width: 1000px; /* Changed from max-width to width */
+        overflow-y: auto; /* Already correct */
+      }
+      .back {
+        color: white;
+      }
+      .back:hover {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="position-relative">
+      <a href="/" class="back">Back</a>
+      <div class="box"></div>
+    </div>
+  </body>
 </html>

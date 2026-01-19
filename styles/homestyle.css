@@ -127,6 +127,17 @@ h1, h4 {
   }
 }
 
+/* umm links */
+
+.alink {
+  transition: all 2s ease;
+  color: #aaa;
+}
+
+.alink.twinkle {
+  color: aquamarine;
+  text-shadow: 0 0 10px aquamarine;
+}
 /* Tech boxes */
 .techbox {
   display: inline-block;
@@ -147,9 +158,9 @@ h1, h4 {
 
 /* Project cards */
 .project-card {
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
   border-radius: 6px;
-  padding: 15px;
+  padding: 5px 0;
   height: 100%;
   transition: border-color 0.2s ease;
 }
@@ -160,13 +171,24 @@ h1, h4 {
 
 .project-title {
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.project-title:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: aquamarine;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
 }
 
 .project-desc {
   color: #888;
   font-size: 0.85rem;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .project-tag {
@@ -198,7 +220,8 @@ h1, h4 {
 /* Links */
 a {
   color: #aaa;
-  text-decoration: none;
+  font-weight:bolder;
+  /* text-decoration: none; */
   transition: color 0.2s ease;
 }
 
