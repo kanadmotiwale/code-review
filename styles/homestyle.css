@@ -5,7 +5,8 @@ body {
   padding-left: 150px;
   padding-right: 150px;
   color: #e0e0e0;
-   font-size: 14px;  /* Reduce from default 16px */
+  font-size: 14px;
+  /* Reduce from default 16px */
   line-height: 1.4;
 }
 
@@ -15,7 +16,8 @@ p {
 }
 
 /* Typography */
-h1, h4 {
+h1,
+h4 {
   color: aquamarine;
 }
 
@@ -50,7 +52,8 @@ h1, h4 {
   /* border-bottom: 1px solid #333; */
   transition: padding-left 0.2s ease;
 }
-.exp h6{
+
+.exp h6 {
   color: aquamarine;
 }
 
@@ -122,6 +125,7 @@ h1, h4 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -138,6 +142,7 @@ h1, h4 {
   color: aquamarine;
   text-shadow: 0 0 10px aquamarine;
 }
+
 /* Tech boxes */
 .techbox {
   display: inline-block;
@@ -174,7 +179,7 @@ h1, h4 {
   margin-bottom: 4px;
 }
 
-.project-title:hover{
+.project-title:hover {
   cursor: pointer;
   text-decoration: underline;
   color: aquamarine;
@@ -220,7 +225,7 @@ h1, h4 {
 /* Links */
 a {
   color: #aaa;
-  font-weight:bolder;
+  font-weight: bolder;
   /* text-decoration: none; */
   transition: color 0.2s ease;
 }
@@ -228,6 +233,7 @@ a {
 a:hover {
   color: aquamarine;
 }
+
 li:hover {
   color: aquamarine;
 }

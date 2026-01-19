@@ -35,12 +35,11 @@ const links = document.querySelectorAll(".alink");
 setInterval(() => {
   let randomlink = links[Math.floor(Math.random() * links.length)];
   randomlink.classList.add("twinkle");
-  
+
   setTimeout(() => {
     randomlink.classList.remove("twinkle");
   }, 1500);
 }, 2500);
-
 
 const ticker = document.querySelector(".news-ticker");
 let scrollPos = 0;
@@ -58,14 +57,13 @@ function autoScroll() {
 
 autoScroll();
 
-
 // Project hover thing
 
-document.querySelectorAll(".project-card").forEach((project) =>{
+document.querySelectorAll(".project-card").forEach((project) => {
   project.addEventListener("mouseenter", () => {
-    project.querySelector(".project-tag-group").style.visibility = "visible"
-  })
+    project.querySelector(".project-tag-group").style.visibility = "visible";
+  });
   project.addEventListener("mouseleave", () => {
-    project.querySelector(".project-tag-group").style.visibility = "hidden"
-  })
-})
+    project.querySelector(".project-tag-group").style.visibility = "hidden";
+  });
+});
