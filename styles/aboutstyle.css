@@ -1,0 +1,300 @@
+:root {
+  --bg-dark: #0a0e27;
+  --bg-card: rgba(15, 23, 42, 0.55);
+  --border-color: rgba(37, 99, 235, 0.4);
+  --text-primary: #e0e0e0;
+  --text-secondary: #94a3b8;
+  --cyan: #0ea5e9;
+  --blue: #3b82f6;
+  --accent: #0ea5e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.4) 0%, rgba(26, 39, 58, 0.4) 100%),
+              url('../images/minecraftbg.png') center/cover no-repeat fixed;
+  background-blend-mode: overlay;
+  color: var(--text-primary);
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--cyan);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: var(--blue);
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'VT323', monospace;
+  font-size: 2.5rem;
+  color: var(--cyan);
+  margin-bottom: 0.1rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+/* Card */
+.card {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  padding: 0.8rem;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  border-color: var(--cyan);
+  background-color: rgba(14, 165, 233, 0.1);
+  box-shadow: 0 8px 32px rgba(14, 165, 233, 0.15);
+}
+
+.intro-card {
+  grid-column: 1 / -1;
+}
+
+.card-full {
+  grid-column: 1 / -1;
+}
+
+
+.section-title {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.skill-title {
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+
+
+.text {
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.text.team {
+  font-size: 0.95rem;
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.text.small {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.highlight {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.cyan-text {
+  color: var(--cyan);
+}
+
+
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.list li {
+  color: var(--text-primary);
+  padding-left: 1rem;
+  position: relative;
+  font-size: 0.85rem;
+}
+
+.list li::before {
+  content: '> ';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+
+
+
+.sport-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.sport-tag,
+.skill-tag {
+  background-color: rgba(59, 130, 246, 0.15);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  padding: 0.3rem 0.65rem;
+  font-size: 0.7rem;
+  font-family: 'Cascadia Mono', monospace;
+  transition: 0.2s;
+  cursor: default;
+}
+
+.sport-tag:hover,
+.skill-tag:hover {
+  background-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Resposive  */
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0.7rem 0.5rem;
+  }
+
+  .card {
+    padding: 0.7rem;
+  }
+
+  .section-title {
+    font-size: 1.05rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    padding: 0.6rem;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .skill-group {
+    margin-bottom: 0.6rem;
+  }
+
+  .sport-tag,
+  .skill-tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.65rem;
+  }
+}

@@ -19,6 +19,7 @@ p {
 h1,
 h4 {
   color: aquamarine;
+  font-weight: bolder;
 }
 
 .tagline {
