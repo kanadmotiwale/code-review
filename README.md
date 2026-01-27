@@ -1,6 +1,8 @@
 # Mohammed Armaan - Personal Homepage
 
 A modern, responsive personal portfolio website showcasing my journey as a graduate student and full-stack developer. Built with vanilla HTML, CSS, and JavaScript with a sleek dark theme and interactive elements.
+## Live Demo
+🔗 [View Live Demo](https://mohammedarmaan.github.io/personal)
 
 ![Portfolio Screenshot](./images/thumbnail.png)
 <!-- Replace with an actual screenshot or GIF of your site -->
