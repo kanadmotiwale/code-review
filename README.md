@@ -104,7 +104,7 @@ npx serve .
 ```
 
 ### Option 3: View Live
-Visit the deployed site: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
+Visit the deployed site: [mohammedarmaan.github.io/personal](https://mohammedarmaan.github.io/personal/)
 <!-- Update with your actual deployed URL -->
 
 ##  Customization
@@ -125,8 +125,8 @@ To customize for your own use:
 **Mohammed Armaan**  
 Graduate Student @ Northeastern University | Full-Stack Developer
 
-- 🌐 Homepage: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
-- 💼 LinkedIn: [linkedin.com/in/mohammedarmaan](https://linkedin.com/in/mohammedarmaan)
+- 🌐 Homepage: [mohammedarmaan.github.io](https://mohammedarmaan.github.io/personal)
+- 💼 LinkedIn: [linkedin.com/in/mohammedarmaan](https://linkedin.com/in/armaan0204)
 - 🐙 GitHub: [github.com/mohammedarmaan](https://github.com/mohammedarmaan)
 - 📧 Email: armaan0243@gmail.com
 
