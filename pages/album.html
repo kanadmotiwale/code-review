@@ -4,38 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Photo Album</title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        background-color: black;
-        color: white;
-        font-family: "Cascadia Mono", monospace;
-        max-height: 100vh; /* Changed from height */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .box {
-        border: aquamarine solid 1px;
-        padding: 5px;
-        height: 600px; /* Changed from max-height to height */
-        width: 1000px; /* Changed from max-width to width */
-        overflow-y: auto; /* Already correct */
-      }
-      .back {
-        color: white;
-      }
-      .back:hover {
-        color: aquamarine;
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/albumstyle.css" />
   </head>
   <body>
     <div class="position-relative">
-      <a href="/" class="back">Back</a>
-      <div class="box"></div>
+      <a href="../" class="back">Back</a>
+      <div class="box">
+        <div class="grid">
+          <img src="../images/Boston/IMG_0684.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_0688.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_0690.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_0758.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1073.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_0905.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1073.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1081.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1183.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1342.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1472.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1499.jpeg" alt="Boston photo" />
+          <img
+            src="../images/Boston/53442c09-422f-4241-ae1a-a492aeba25e3.JPG"
+            alt="Boston photo"
+          />
+          <img src="../images/Boston/IMG_1528.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1584.jpeg" alt="Boston photo" />
+          <img src="../images/Boston/IMG_1587.jpeg" alt="Boston photo" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
