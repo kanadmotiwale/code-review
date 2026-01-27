@@ -102,19 +102,6 @@ open index.html
 python -m http.server 8000 .
 ```
 
-##  Customization
-
-To customize for your own use:
-
-1. Update personal information in `index.html`
-2. Replace images in the `/images` folder
-3. Modify color scheme by editing CSS variables in `homestyle.css`:
-   ```css
-   /* Change aquamarine to your preferred accent color */
-   color: aquamarine;
-   ```
-4. Update social links in the Contact section
-
 ##  Author
 
 **Mohammed Armaan**  
