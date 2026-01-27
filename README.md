@@ -30,7 +30,7 @@ This project serves as my personal homepage and portfolio to:
 
 | Home Page | About Page |
 |-----------|------------|
-| ![Home](./images/home-screenshot.png) | ![About](./images/about-screenshot.png) |
+| ![Home](./images/thumbnail.png) | ![About](./images/aboutme.png) |
 
 <!-- Replace with actual screenshots -->
 
@@ -97,36 +97,18 @@ open index.html
 ### Option 2: Live Server (Recommended for Development)
 ```bash
 # If you have VS Code with Live Server extension
-# Right-click index.html → "Open with Live Server"
 
-# Or using npm
-npx serve .
+# Or using python
+python -m http.server 8000 .
 ```
-
-### Option 3: View Live
-Visit the deployed site: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
-<!-- Update with your actual deployed URL -->
-
-##  Customization
-
-To customize for your own use:
-
-1. Update personal information in `index.html`
-2. Replace images in the `/images` folder
-3. Modify color scheme by editing CSS variables in `homestyle.css`:
-   ```css
-   /* Change aquamarine to your preferred accent color */
-   color: aquamarine;
-   ```
-4. Update social links in the Contact section
 
 ##  Author
 
 **Mohammed Armaan**  
 Graduate Student @ Northeastern University | Full-Stack Developer
 
-- 🌐 Homepage: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
-- 💼 LinkedIn: [linkedin.com/in/mohammedarmaan](https://linkedin.com/in/mohammedarmaan)
+- 🌐 Homepage: [mohammedarmaan.github.io](https://mohammedarmaan.github.io/personal)
+- 💼 LinkedIn: [linkedin.com/in/mohammedarmaan](https://linkedin.com/in/armaan0204)
 - 🐙 GitHub: [github.com/mohammedarmaan](https://github.com/mohammedarmaan)
 - 📧 Email: armaan0243@gmail.com
 
